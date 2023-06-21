@@ -1,0 +1,9 @@
+.header {
+  text-align: center;
+}
+.header p {
+  display: inline-flex;
+  width: 25em;
+}
+
+/*# sourceMappingURL=styles.css.map */
