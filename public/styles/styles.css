@@ -1,9 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
+body h1, body h2, body h3 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+  margin: 1em;
+}
+body p, body a {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  width: 24vw;
+  display: inline-block;
+  color: #b7c0c0;
+}
+body .art1 {
+  display: flex;
+}
+
 .header {
   text-align: center;
 }
 .header p {
   display: inline-flex;
-  width: 25em;
+  width: 25vw;
+}
+.header .fondo-pc {
+  width: 100%;
+  margin-bottom: -16em;
+  height: 100%;
+}
+.header h1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 600;
+}
+
+main {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

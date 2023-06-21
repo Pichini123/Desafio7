@@ -1,9 +1,20 @@
+@import "_h-variables.scss";
+
 .header {
     text-align: center;
 
     p {
         display: inline-flex;
 
-        width: 25em;
+        width: 25vw;
+    }
+    .fondo-pc{
+        width: 100%;
+        margin-bottom: -16em;
+        height: 100%;
+    }
+    h1{
+        font-family: $tipografia1;
+        font-weight: $anchotipografia;
     }
 }
