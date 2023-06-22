@@ -1,6 +1,10 @@
 @charset"UTF-8";
 @import "_h-variables.scss";
 body{
+     display: grid;
+     grid-template-rows: 20% 78% 10%;; 
+     grid-template-columns: repeat(10 , 10%);
+     margin: 0;
     h1,h2,h3 {
         font-family: $tipografia1;
         font-weight: $anchotipografia;
@@ -10,10 +14,13 @@ body{
         font-family: $tipografia1;
         font-weight: 400;
         width: 24vw;
-        display: inline-block;
+       // display: inline-block;
         color: $co3;
     }
     .art1{
         display: flex;
     }
 }
+
+//64vh 260vh 32vh;
+//20% 70% 10%; 

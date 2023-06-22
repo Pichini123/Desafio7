@@ -1,0 +1,9 @@
+@charset"UTF-8";
+.footer{
+    grid-column: 1/11;
+    grid-row: 3/4;
+    display: flex;
+    .artfooter{
+        display: flex;
+    }
+}

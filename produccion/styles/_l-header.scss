@@ -1,20 +1,24 @@
 @import "_h-variables.scss";
 
 .header {
-    text-align: center;
-
-    p {
-        display: inline-flex;
-
-        width: 25vw;
-    }
-    .fondo-pc{
+    grid-column: 1/11;
+    grid-row: 1/2;
+     .fondo-pc{
+        position: absolute;
         width: 100%;
-        margin-bottom: -16em;
-        height: 100%;
-    }
-    h1{
-        font-family: $tipografia1;
-        font-weight: $anchotipografia;
-    }
+     }
+     .div1{
+        display: flex;
+        margin-top: 17vh;
+        flex-direction: column;
+        align-items: center;
+     }
+     .divboton{
+        display: flex;
+        justify-content: center;
+     }
+     
+     
+
+   
 }
