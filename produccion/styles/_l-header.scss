@@ -1,22 +1,58 @@
-@import "_h-variables.scss";
+@use "_h-variables.scss" as V ; 
+@use  "mixin.scss" as M;
 
-.header {
+
+.Header {
     grid-column: 1/11;
     grid-row: 1/2;
-     .fondo-pc{
-        position: absolute;
-        width: 100%;
-     }
-     .div1{
-        display: flex;
+     
+    
+      background-image: url(/Desafios/BC_Desafio07_Adriano-Oyola_Ezequiel-Roberto-Correa/public/img/bg-header-desktop.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      
+
+      & .h1header {
+      font-size: 47px;
+      font-family: V.$font;
+      }
+
+      & .pheader {
+      font-family: V.$font;
+      width:50%;
+      text-align: center;
+      font-size: 21px;
+      margin-top: -1%;
+      }
+
+      & .boton1{
+          @include M.boton1 ;
+        }
+
+      & .boton1:hover{
+         background-color: V.$co4;
+        }
+
+      & .boton2{
+         @include M.boton2 ;
+        }
+
+      & .boton2:hover{
+         background-color: V.$co5;
+        }
+
+     
+     & .div1{
+        
         margin-top: 17vh;
-        flex-direction: column;
-        align-items: center;
+        
+        @include M.display (flex, column, nowrap,normal,normal,center) ;
      }
-     .divboton{
-        display: flex;
-        justify-content: center;
+     & .divboton{
+         @include M.display (flex, row, nowrap,normal,center,normal) ;
      }
+     
+ 
      
      
 

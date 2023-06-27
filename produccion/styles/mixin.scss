@@ -1,0 +1,52 @@
+@use  "_h-variables.scss" as V;
+@mixin display ( $display:false , $flexdirection:false , $flexwrap:false ,$aligncontent:false, $justifycontent:false , $alingitems:false ) {
+
+    display: $display  ;
+    @if flex-direction{
+        flex-direction:$flexdirection 
+    }  ;
+    @if flex-wrap{
+        flex-wrap:$flexwrap 
+    }  ;
+    @if align-content{
+        flex-direction:$flexdirection 
+    }  ;
+    
+    @if justify-content{
+        justify-content: $justifycontent
+    };
+    @if align-items{
+        align-items: $alingitems
+    };
+
+    
+}
+@mixin boton1{
+
+    color: white;
+    font-family: V.$font;
+    font-size: 17px;
+    font-weight: V.$fontw;
+    background-color: V.$co7;
+    height: 3em;
+    border-radius: 2em;
+    border: 1px solid V.$co7 ;
+    width: 14em;
+    box-shadow: 1px 2px 2px V.$co7;
+    margin: 1em;
+    
+}
+@mixin boton2{
+    color: white;
+    font-family:  V.$font;
+    font-size: 17px;
+    font-weight: V.$fontw;
+    background-color: V.$co2;
+    height: 3em;
+    border-radius: 2em;
+    border: 1px solid V.$co8;
+    width: 14em;
+    box-shadow: 1px 2px 2px V.$co8;
+    margin: 1em;
+
+}

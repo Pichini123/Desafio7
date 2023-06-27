@@ -1,9 +1,57 @@
 @charset"UTF-8";
+@use './h-variables' as V ;
+@use './mixin.scss' as M;
+
 .footer{
     grid-column: 1/11;
     grid-row: 3/4;
-    display: flex;
-    .artfooter{
-        display: flex;
+
+
+    @include M.display (flex, row, nowrap,normal,normal,center);
+
+    background-color: V.$co3;
+    margin-top: 3%;
+
+    & .artfooter{
+        
+        gap: 4rem;
+        @include M.display (flex, row, nowrap,normal,normal,normal);
+
+        margin-left: 12%;
+        font-family: V.$font;
+        font-weight: V.$fontw;
+    }
+
+    & .divfooter {
+        @include M.display (flex, row, nowrap,normal,normal,center);
+        gap: 20%;
+    }
+
+    & .imgfooter {
+        width: 51%;
+       margin-left: 77%;
+    }
+
+    & .diviconos {
+        margin-left: 25%;
+    }
+
+    & .afooter {
+        margin: 12px;
+    }
+
+    
+    & a{
+        
+        text-decoration: none;
+        color: V.$co6;
+    }
+
+    & a:hover {
+        color: V.$co7 ;
     }
 }
+
+
+
+

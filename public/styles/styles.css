@@ -4,9 +4,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap");
 body {
   display: grid;
-  grid-template-rows: 20% 78% 10%;
+  grid-template-rows: 20% 80% 10%;
   grid-template-columns: repeat(10, 10%);
   margin: 0;
 }
@@ -14,6 +22,12 @@ body h1, body h2, body h3 {
   font-family: "Bai Jamjuree", sans-serif;
   font-weight: 600;
   margin: 1em;
+}
+body h1 {
+  font-size: 3em;
+}
+body h2 {
+  font-size: 2em;
 }
 body p, body a {
   font-family: "Bai Jamjuree", sans-serif;
@@ -42,6 +56,31 @@ body .art1 {
 .header .divboton {
   display: flex;
   justify-content: center;
+}
+.header .boton1 {
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #5ccdbb;
+  height: 4em;
+  border-radius: 2em;
+  border-color: #5ccdbb;
+  width: 12em;
+  box-shadow: 0px 1px 0px #a5a3a3;
+  margin: 1em;
+}
+.header .boton2 {
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #8896ff;
+  height: 4em;
+  border-radius: 2em;
+  border-color: #8896ff;
+  width: 12em;
+  box-shadow: 0px 1px 0px #a5a3a3;
+  margin: 1em;
+}
+.header button:hover {
+  background: #c9dfdb;
 }
 
 .main {
@@ -95,11 +134,35 @@ body .art1 {
   display: flex;
   justify-content: center;
 }
+.main .boton1 {
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #5ccdbb;
+  height: 4em;
+  border-radius: 2em;
+  border-color: #5ccdbb;
+  width: 12em;
+  box-shadow: 0px 1px 0px #a5a3a3;
+  margin: 1em;
+}
+.main .boton2 {
+  color: white;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: #8896ff;
+  height: 4em;
+  border-radius: 2em;
+  border-color: #8896ff;
+  width: 12em;
+  box-shadow: 0px 1px 0px #a5a3a3;
+  margin: 1em;
+}
+.main button:hover {
+  background: #c9dfdb;
+}
 
 .footer {
   grid-column: 1/11;
   grid-row: 3/4;
-  display: flex;
 }
 .footer .artfooter {
   display: flex;

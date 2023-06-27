@@ -1,56 +1,161 @@
 @charset"UTF-8";
+@use  "_h-variables.scss" as V;
+@use  "mixin.scss" as M;
 
  .main{
     grid-column: 1/11;
     grid-row: 2/3;
-    .art1{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-   .main-inf{
-      display: flex;
-   
-   }
-   .monitor{
-      margin-left: -25vw;
-      margin-right: 8vw;
 
-   }
-   .img-pc{
-      width: 124%;
-   }
-   .section-m{
-      padding: 10vw;
-      margin-right: -20vw;
-   }
-   .divsh3p{
-      width: 20vw;
-   }
-   .art2{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-   }
-   .items{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
+   & .h22{
+      font-family: V.$font;
       text-align: center;
    }
-   .logos{
-      display: flex;
-      justify-content: space-around;
-   }
-   .botonesf{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
 
+   & .h2{
+      text-align: center;
+      font-family: V.$font;
+      font-size: 36px;
+
+    }
+
+   & .ph2{
+      text-align: center;
+      font-family: V.$font;
+      width: 47%;
+      padding-left: 26%;
+     }    
+   & .art1{
+      
+      @include M.display (flex, column, nowrap,normal,normal,center);
+
+      
+   
+  
+      
+
+      & .main-inf{
+         
+         margin-top: 4%;
+         @include M.display (flex, row, nowrap,normal,normal,normal);
+      
+
+         & .monitor{
+            margin-left: -18vw;
+            
+            & .img-pc{
+               width: 100%;;
+            }
+         }
+
+         & .section-m{
+            padding: 5vw;
+            margin-right: 2vw;
+            
+
+            & .divsh3p{
+               width: 20vw;
+
+               & .h3art1 {
+                  font-family: V.$font;
+               }
+
+               & .part1 {
+                  font-family: V.$font;
+               }
+            }
+         }
+      }
+      
+      
    }
-   .bfinal{
-      display: flex;
-      justify-content: center;
+
+   .art2{
+   
+      @include M.display (flex, column, nowrap,normal,center,center);
+
+      & .ph2art2{
+         text-align: center;
+         font-family: "Bai Jamjuree", sans-serif;
+         width: 42%;
+        }
+
+      & .tablet {
+         width: 100%;
+         height: auto;
+      }
+   }  
+   
+   & .items{
+      width: 92%;
+  
+      @include M.display (flex, row, nowrap,normal,normal,normal);
+
+         & img{
+            margin-left: 46%;
+         }
+         & .h3items {
+            font-family: V.$font;
+            text-align: center;
+         }
+   
+         & .pitems {
+            font-family: V.$font;
+            width: 65%;
+            padding-left: 18%;
+         }
+      
+   
    }
- }
+   
+   
+   & .logos{
+      
+
+      margin-top: 7%;
+      width: 86%;
+      margin-left: 7%;
+
+      @include M.display (flex, row, nowrap,normal,space-around,normal);
+   }
+   
+   & .botonesf{
+      
+
+      margin-top: 10%;
+      @include M.display (flex, column, nowrap,normal,normal,center);
+
+      & .pbotones {
+         font-family: V.$font;
+         width: 40%;
+         text-align: center;
+     }
+      }
+
+
+      & .bfinal{
+         display: flex;
+         justify-content: center;
+         @include M.display (flex, row, nowrap,normal,center,normal);
+   
+         & .boton1{
+            @include M.boton1 ;
+          }
+  
+        & .boton1:hover{
+           background-color: V.$co4;
+          }
+  
+        & .boton2{
+           @include M.boton2 ;
+          }
+  
+        & .boton2:hover{
+           background-color: V.$co5;
+          }
+  
+      }
+   }
+   
+   
+ 
+    

@@ -1,19 +1,22 @@
  @charset"UTF-8";
+
+
 //colors
 $co1:#5ccdbb;
-$co2:#8896ff;
-$co3:#b7c0c0;
+$co2:#6174FF;
+$co3:#f5f6f8;
+$co4: rgb(96,202,188);
+$co5: rgb(136,150,255);
+$co6: rgb(78,86,93) ;
+$co7:#459d8e;
+$co8: #515a9a;
+
+
 //fonts
- $tipografia1:'Bai Jamjuree', sans-serif;
- $anchotipografia:600;  
+ $font:'Bai Jamjuree', sans-serif;
+ $fontw:600;  
 
      
- 
- 
- 
-
-
-
  //fuentes
  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap'); //font-family: 'Bai Jamjuree', sans-serif;
  @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap'); // font-family: 'Bai Jamjuree', sans-serif;

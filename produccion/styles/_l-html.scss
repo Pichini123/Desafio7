@@ -1,26 +1,297 @@
 @charset"UTF-8";
-@import "_h-variables.scss";
+@use "_h-variables.scss" as V;
+@use "./h-breakpoin.scss" as BP;
+@use "./mixin.scss" as M;
+
+
 body{
+
      display: grid;
-     grid-template-rows: 20% 78% 10%;; 
+     grid-template-rows: 20% 80% 6%;; 
      grid-template-columns: repeat(10 , 10%);
      margin: 0;
-    h1,h2,h3 {
-        font-family: $tipografia1;
-        font-weight: $anchotipografia;
-        margin: 1em;
-    }
-    p,a{
-        font-family: $tipografia1;
-        font-weight: 400;
-        width: 24vw;
-       // display: inline-block;
-        color: $co3;
-    }
+
+     color: V.$co6 ;
+    
+   
+
+    
+ 
     .art1{
         display: flex;
     }
+
+
+    
 }
 
-//64vh 260vh 32vh;
-//20% 70% 10%; 
+@media screen and (max-width : BP.$maxWidth) {
+
+  body {
+   grid-template-columns : repeat(5, 21%);
+   grid-template-rows: 16% 78% 12%;
+   
+
+          
+
+   
+  & .Header {
+
+      grid-column: 1/6;
+
+      background-image: url(/Desafios/BC_Desafio07_Adriano-Oyola_Ezequiel-Roberto-Correa/public/img/bg-header-mobile.png);
+      background-repeat: no-repeat;
+      background-size: 100%; 
+      
+
+     & .h1header {
+      width: 100%;
+      text-align: center;
+      font-size: 22px;
+     } 
+
+     & .pheader {
+      width: 86%;
+      font-size: 10px;
+     }
+
+
+    & .div1{
+      
+      margin-top: 11vh;
+      
+      @include M.display (flex, columns, nowrap,normal,normal,center) ;
+      
+      & .figurelogo{
+        margin-left: 28%;
+
+        & .logo {
+          width: 80%;
+        }
+      }
+      
+      
+
+      
+    
+      }
+
+      & .divboton{
+        @include M.display (flex, column, nowrap,normal,center,center) ;
+        
+        & .boton1, .boton2 {
+          font-size: 12px;
+          height: 3em;
+          width: 15em;
+        }
+      
+      }
+
+    
+ }
+ & .main{ 
+
+     grid-column: 1/6;
+
+
+    & .ph2 {
+      font-size: 9px;
+      margin-left: 0px;
+    }
+
+    & .art1 {
+     
+      @include M.display (flex, columns, nowrap,normal,normal,center);
+    
+
+    
+       
+       
+     
+       & .h2 {
+        width: 83%;
+        margin-left: 9%;
+        font-size: 18px
+       }
+
+       & .ph2{
+        font-size: 9px;
+        text-align: center;
+        width: 80%;
+        padding-left: 14%;
+       }
+
+       & .main-inf {
+         
+        margin-top: 4%;
+        @include M.display (flex, column, nowrap,normal,normal,normal);
+     
+        & .monitor {
+          margin: 0;
+
+        & .img-pc {
+          margin-left: 8%;
+          margin-top: 8%;
+          width: 84%;
+        }
+        }
+
+        & .section-m{
+          @include M.display (flex, column, nowrap,normal,normal,center);
+          
+          & .divsh3p{
+            width: 100%;
+            text-align: center;
+
+            & .h3art1{
+              font-size: 20px;
+            }
+
+            & .part1{
+              font-size: 10px;
+            }
+          }
+        
+        }
+      } 
+          
+          
+       }
+      
+       
+   
+
+    & .art2 {
+  
+      @include M.display (flex, columns, nowrap,normal,center,center);
+    
+        & .h2 {
+          font-size: 20px;
+          width: 90%;
+          margin-top: 22%;
+        }
+
+        & .ph2art2 {
+          width: 80%;
+          font-size: 10px;
+          margin-top: 0%;
+        }
+
+        & .tablet {
+          margin-left: 2%;
+          width: 93%;
+          margin-top: 12%;
+        }
+    
+    }
+
+
+    & .h22{
+        width: 80%;
+        margin-left: 11%;
+        font-size: 22px ;
+        font-family: V.$font;
+        text-align: center ;
+    }
+
+   
+    & .items{
+      width: 100%;      
+      @include M.display (flex, column , nowrap,center,normal,center);
+
+      & .figureitems {
+        @include M.display (flex, column, nowrap,normal,normal,center);
+       
+        
+        & .iconoitems {
+          margin: 0;
+          width: 27%;
+          margin-top: 7%;
+          
+        }
+
+        & .h3items {
+          font-size: 19px;
+        }
+
+        & .pitems{
+          text-align: center;
+          padding-left: 3%;
+          margin-top: -1%;
+          font-size: 10px;
+          width: 123%;
+        }
+      }
+    }  
+
+   
+
+    & .logos {
+      @include M.display (flex, column, nowrap,normal,space-around,center);
+      gap: 66px ;
+      margin-top: 26%;
+
+      & img{
+        width: 66%;
+        margin-left: 19%;
+      }
+    }
+
+    & .botonesf{
+      @include M.display (flex, column, nowrap,normal,normal,center);
+
+      & .h2{
+        width: 87%;
+        font-size: 20px;
+      }
+
+      & .pbotones{
+        font-size: 10px;
+        width: 81%;
+    } 
+    }
+
+    & .bfinal{
+      
+      @include M.display (flex, column, nowrap,normal,center,center);
+
+      & .boton1, .boton2 {
+        font-size: 12px;
+        height: 3em;
+        width: 15em;
+      }
+    }
+
+  }
+
+  & .footer {
+    grid-column: 1/6;
+    @include M.display (flex, column, nowrap,normal,normal,center);
+    
+
+    & .imgfooter {
+      width: 32%;
+      margin-left: 59px;
+      margin-top: 10%;
+    }
+
+
+    & .artfooter{
+      @include M.display (flex, column , nowrap,normal,normal,center);
+      margin: 0;
+
+
+      & .divfooter{
+        @include M.display (flex, column , nowrap,normal,normal,center);
+        gap: 16px;
+        font-size: 16px;
+        
+      }
+      }
+    & .diviconos{
+      margin-top: 20%;
+      margin-left: 0;
+    }
+  }
+}
+}
